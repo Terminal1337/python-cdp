@@ -13,7 +13,7 @@ generate the classes and methods found in this library.
 ## Installation
 You can install this library as a dependency on your project with:
 ```
-pip install git+https://github.com/HMaker/python-cdp.git@latest
+pip install git+https://github.com/Terminal1337/python-cdp.git@latest
 ```
 Change the git tag `@latest` if you need another version. To install for development, clone this
 repository, install [Poetry][5] package manager and run `poetry install` to install dependencies.
