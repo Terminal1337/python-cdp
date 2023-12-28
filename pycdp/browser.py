@@ -135,6 +135,8 @@ class ChromeLauncher(BrowserLauncher):
 
     def _build_launch_cmdline(self) -> t.List[str]:
         cmd = [
+            "xvfb-run",
+            "-a",
             self._binary,
             f'--window-size={self._window_width},{self._window_height}' if self._window_width is not None and self._window_height is not None else '--start-maximized',
             f'--user-data-dir={self._profile}' if self._profile is not None else '',
